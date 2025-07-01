@@ -1,0 +1,6 @@
+/* Migrated from index.html <style> blocks */
+.fb-50f631dd { align-items: center;background-color: #e2e2e2;background-image: url(../gggyrate.svg);background-position: center;background-repeat: repeat;background-size: auto;box-shadow: 1%;display: flex;flex-direction: column;flex-shrink: 0;flex-wrap: wrap;font-family: JetBrainsMono\ NF\ Regular;position: relative; }
+.fb-8027ed56 { align-items: center;box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 10px 10px -5px;display: flex;flex-direction: row;flex-shrink: 1;justify-content: space-around;overflow: hidden;width: 100%;flex-grow: 1;flex-wrap: wrap;z-index: 10;background-color: #e2e2e2;border-color: #000000;border-style: solid;overflow-x: hidden;overflow-y: hidden;background-image: url(../nnnoise.svg);background-size: auto;background-position: top;background-repeat: repeat;position: fixed; }
+/* ... (all other CSS rules from the <style> blocks, including @media and @font-face) ... */ 
+
+@font-face {font-family: "JetBrainsMono NF Regular";src: url("../JetBrainsMonoNerdFont-Regular.ttf");} 
