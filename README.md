@@ -2,7 +2,7 @@
 
 Professional fleet management website built with modern React 19, TypeScript, and TailwindCSS. Complete pixel-perfect rebuild of the original AssetTrack website with enhanced performance and functionality.
 
-🌐 **Live Site**: https://theassettrack.github.io/theassettrack.com/
+🌐 **Live Site**: https://theassettrack.com/
 
 ## ✨ Features
 
@@ -80,7 +80,7 @@ theassettrack-site/
 **Already deployed and live!** 🎉
 
 ### Live URLs:
-- **Production Site**: https://theassettrack.github.io/theassettrack.com/
+- **Production Site**: https://theassettrack.com/
 - **Repository**: https://github.com/theassettrack/theassettrack.com
 - **Deployment Status**: https://github.com/theassettrack/theassettrack.com/actions
 
@@ -164,7 +164,7 @@ This project is licensed under the MIT License.
 
 ## 🔗 Links
 
-- **🌐 Live Site**: https://theassettrack.github.io/theassettrack.com/
+- **🌐 Live Site**: https://theassettrack.com/
 - **📱 Original Design**: Based on theassettrack.com
 - **⚙️ Built With**: [Better-T-Stack](https://github.com/AmanVarshney01/create-better-t-stack)
 - **📚 Documentation**: See this README for complete setup guide
