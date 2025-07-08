@@ -5,7 +5,7 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all duration-100 ease-out disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all duration-100 ease-out disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive cursor-pointer",
   {
     variants: {
       variant: {
@@ -22,11 +22,11 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
         // AssetTrack specific variants - Exact Match
         "asset-primary": 
-          "bg-asset-blue text-white rounded-xl font-mono font-medium text-sm px-3.5 py-3 transition-all duration-100 ease-out hover:bg-asset-hover",
+          "bg-asset-blue text-white rounded-xl font-mono font-medium text-sm px-[12px] sm:px-[14px] py-[10px] sm:py-[12px] transition-all duration-100 ease-out hover:bg-asset-hover",
         "asset-secondary":
-          "bg-asset-secondary-btn text-asset-hover rounded-xl font-mono font-medium text-sm px-3.5 py-3 transition-all duration-100 ease-out hover:bg-asset-hover hover:text-white",
+          "bg-asset-secondary-btn text-asset-hover rounded-xl font-mono font-medium text-sm px-[12px] sm:px-[14px] py-[10px] sm:py-[12px] transition-all duration-100 ease-out hover:bg-asset-hover hover:text-white",
         "asset-cta":
-          "bg-asset-blue text-white rounded-xl font-mono font-medium text-sm px-3.5 py-3 transition-all duration-100 ease-out hover:bg-asset-hover",
+          "bg-asset-blue text-white rounded-xl font-mono font-medium text-sm px-[12px] sm:px-[14px] py-[10px] sm:py-[12px] transition-all duration-100 ease-out hover:bg-asset-hover",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",

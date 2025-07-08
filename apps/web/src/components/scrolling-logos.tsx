@@ -26,7 +26,7 @@ export function ScrollingLogos({
       )}
       data-testid="scrolling-logos"
     >
-      <div className="flex items-center justify-between max-w-[1200px] mx-auto">
+      <div className="flex items-center justify-between">
         <div className="flex gap-12 ticker-track whitespace-nowrap">
           {duplicatedPartners.map((partner, index) => (
             <div
