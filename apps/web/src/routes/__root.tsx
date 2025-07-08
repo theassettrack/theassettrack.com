@@ -1,4 +1,3 @@
-import Header from "@/components/header";
 import Loader from "@/components/loader";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
@@ -18,11 +17,11 @@ export const Route = createRootRouteWithContext<RouterAppContext>()({
   head: () => ({
     meta: [
       {
-        title: "My App",
+        title: "AssetTrack - Fleet Management Solutions",
       },
       {
         name: "description",
-        content: "My App is a web application",
+        content: "Professional telematics consulting and fleet management solutions. Expert guidance for optimizing your fleet operations.",
       },
     ],
     links: [
@@ -39,13 +38,11 @@ function RootComponent() {
     select: (s) => s.isLoading,
   });
 
-
   return (
     <>
       <HeadContent />
-      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-        <div className="grid grid-rows-[auto_1fr] h-svh">
-          <Header />
+      <ThemeProvider defaultTheme="light" storageKey="assettrack-theme">
+        <div className="min-h-screen">
           {isFetching ? <Loader /> : <Outlet />}
         </div>
         <Toaster richColors />

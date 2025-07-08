@@ -24,8 +24,8 @@ export function Section({
 
   const patternClasses = {
     none: "",
-    noise: "relative before:absolute before:inset-0 before:bg-[url('/patterns/noise.svg')] before:opacity-10 before:pointer-events-none",
-    gyrate: "relative before:absolute before:inset-0 before:bg-[url('/patterns/gyrate.svg')] before:opacity-10 before:pointer-events-none"
+    noise: "relative before:absolute before:inset-0 before:bg-[url('/patterns/nnnoise.svg')] before:opacity-10 before:pointer-events-none",
+    gyrate: "relative before:absolute before:inset-0 before:bg-[url('/patterns/gggyrate.svg')] before:opacity-10 before:pointer-events-none"
   };
 
   const variantClasses = {

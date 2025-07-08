@@ -1,0 +1,9 @@
+# Video Placeholders
+
+This directory should contain the following video files:
+- astr-hero.mp4 (Hero section background video)
+- astr-service-fleetmanagement.mp4 (Fleet Management service video)
+- astr-service-consulting.mp4 (Consulting service video)  
+- astr-service-dataviz.mp4 (Data Visualization service video)
+
+For now, the VideoBackground component will show placeholder content when videos are missing.
