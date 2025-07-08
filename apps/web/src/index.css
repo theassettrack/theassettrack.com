@@ -4,20 +4,29 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --font-sans: "Inter", "Geist", ui-sans-serif, system-ui, sans-serif,
+  --font-sans: "JetBrainsMono NF", "JetBrains Mono", "Nunito", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-mono: "JetBrains Mono", "JetBrainsMono NF", monospace;
   
-  /* AssetTrack Brand Colors */
-  --color-asset-blue: oklch(0.488 0.243 264.376);
-  --color-asset-gray: oklch(0.32 0 0);
-  --color-asset-light: oklch(0.918 0 0);
-  --color-asset-dark: oklch(0.205 0 0);
+  /* AssetTrack Original Colors - Exact Match */
+  --color-asset-blue: #0018f1;
+  --color-asset-dark: #171717;
+  --color-asset-medium: #2d2d2d;
+  --color-asset-gray: #525252;
+  --color-asset-hover: #383838;
+  --color-asset-light-bg: #e2e2e2;
+  --color-asset-white: #ffffff;
+  --color-asset-secondary-btn: #F3F3F3;
+  --color-asset-border: #EDEDED;
+  --color-asset-input: #999999;
 }
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  @apply bg-asset-light-bg font-mono;
+  background-image: url('/patterns/gyrate.svg');
+  background-repeat: repeat;
+  background-size: 100px 100px;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;

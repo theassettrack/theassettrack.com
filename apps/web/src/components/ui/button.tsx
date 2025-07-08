@@ -20,13 +20,13 @@ const buttonVariants = cva(
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
         link: "text-primary underline-offset-4 hover:underline",
-        // AssetTrack specific variants
+        // AssetTrack specific variants - Exact Match
         "asset-primary": 
-          "bg-asset-blue text-white shadow-md hover:bg-asset-dark focus-visible:ring-asset-blue/20",
+          "bg-asset-blue text-white rounded-xl font-mono font-medium text-sm px-3.5 py-3 transition-all duration-100 ease-out hover:bg-asset-hover",
         "asset-secondary":
-          "bg-asset-light text-asset-dark border border-asset-gray/20 hover:bg-asset-gray hover:text-white",
+          "bg-asset-secondary-btn text-asset-hover rounded-xl font-mono font-medium text-sm px-3.5 py-3 transition-all duration-100 ease-out hover:bg-asset-hover hover:text-white",
         "asset-cta":
-          "bg-asset-blue text-white shadow-lg hover:bg-asset-dark transform hover:scale-105 font-semibold px-8 py-3 rounded-lg",
+          "bg-asset-blue text-white rounded-xl font-mono font-medium text-sm px-3.5 py-3 transition-all duration-100 ease-out hover:bg-asset-hover",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",

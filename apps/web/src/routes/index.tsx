@@ -6,6 +6,7 @@ import { VideoBackground } from "@/components/video-background";
 import { ServiceCard } from "@/components/service-card";
 import { TeamMember } from "@/components/team-member";
 import { LogoGrid } from "@/components/logo-grid";
+import { cn } from "@/lib/utils";
 import type { Service, TeamMember as TeamMemberType, Partner } from "@/types";
 
 export const Route = createFileRoute("/")({
@@ -67,127 +68,140 @@ const mockPartners: Partner[] = [
 function HomeComponent() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section with Video Background */}
-      <Section className="relative min-h-screen flex items-center">
-        <VideoBackground 
-          src="/videos/hero-bg.mp4"
-          className="absolute inset-0"
-          showLoader={true}
-        >
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40" />
-        </VideoBackground>
-        
-        <Container className="relative z-10">
-          <div className="text-center text-white py-20">
-            <div className="inline-block bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
-              <span className="text-sm font-medium">🎯 AssetTrack Migration - Component Testing</span>
-            </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Fleet Management
-              <br />
-              <span className="text-asset-light">Solutions</span>
-            </h1>
-            <p className="text-xl text-asset-light mb-8 max-w-2xl mx-auto">
-              Modern telematics and fleet management platform built with cutting-edge technology
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="asset-cta" size="xl">
-                Free Consultation
-              </Button>
-              <Button variant="asset-secondary" size="xl">
-                Demo Login
-              </Button>
-            </div>
+      {/* Hero Section - Exact Match */}
+      <Section variant="hero" backgroundPattern="noise" className="lg:flex lg:items-center lg:gap-10">
+        <div className="lg:w-1/2">
+          {/* Badge */}
+          <div className="inline-flex items-center rounded-full border border-asset-border bg-transparent px-2 py-1 mb-6">
+            <span className="text-xs font-mono text-asset-gray">🎯 Speaker at Telematics '25</span>
           </div>
-        </Container>
+          
+          {/* Main Heading */}
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-mono font-bold leading-tight text-asset-dark mb-6">
+            Fleet Management Solutions & Telematics Expertise
+          </h1>
+          
+          {/* Subtitle */}
+          <p className="text-base md:text-lg text-asset-gray mb-8 leading-relaxed">
+            Professional telematics consulting and fleet management solutions. Expert guidance for optimizing your fleet operations with modern technology.
+          </p>
+          
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Button variant="asset-primary">
+              Free Consultation
+            </Button>
+            <Button variant="asset-secondary">
+              Demo Login
+            </Button>
+          </div>
+        </div>
+        
+        {/* Hero Video - Right Side */}
+        <div className="lg:w-1/2 mt-10 lg:mt-0">
+          <VideoBackground 
+            src="/videos/astr-hero.mp4"
+            className="rounded-3xl overflow-hidden h-80 lg:h-96"
+            showLoader={true}
+          />
+        </div>
       </Section>
 
       {/* Services Section */}
-      <Section>
-        <Container>
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-asset-dark">
-              Our Services
-            </h2>
-            <p className="text-lg text-asset-gray max-w-2xl mx-auto">
-              Comprehensive solutions for fleet management and telematics
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {mockServices.map((service) => (
-              <ServiceCard 
-                key={service.id} 
-                service={service}
-                onCtaClick={(service) => console.log('CTA clicked:', service.title)}
-              />
-            ))}
-          </div>
-        </Container>
+      <Section variant="card" backgroundPattern="noise">
+        <div className="space-y-12 md:space-y-16">
+          {mockServices.map((service, index) => (
+            <div 
+              key={service.id} 
+              className={cn(
+                "flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-12",
+                index % 2 === 1 && "lg:flex-row-reverse"
+              )}
+            >
+              {/* Service Content */}
+              <div className="lg:w-1/2 space-y-6">
+                <h2 className="text-2xl md:text-3xl font-mono font-bold text-asset-dark">
+                  {service.title}
+                </h2>
+                <p className="text-base md:text-lg text-asset-gray leading-relaxed">
+                  {service.description}
+                </p>
+                <ul className="space-y-3">
+                  {service.features.map((feature, idx) => (
+                    <li key={idx} className="flex items-center gap-3 text-asset-gray">
+                      <div className="w-1.5 h-1.5 bg-asset-blue rounded-full flex-shrink-0" />
+                      <span className="text-sm">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Button variant="asset-primary">
+                  {service.ctaText}
+                </Button>
+              </div>
+              
+              {/* Service Video */}
+              <div className="lg:w-1/2">
+                <VideoBackground 
+                  src={`/videos/astr-service-${service.id.replace('-', '')}.mp4`}
+                  className="rounded-3xl overflow-hidden h-64 lg:h-80"
+                  showLoader={true}
+                />
+              </div>
+            </div>
+          ))}
+        </div>
       </Section>
 
       {/* Partners Section */}
-      <Section className="bg-gray-50">
-        <Container>
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-asset-dark">
-              Trusted by Industry Leaders
-            </h2>
-          </div>
+      <Section variant="card" backgroundPattern="noise">
+        <div className="text-center space-y-8">
+          <h2 className="text-2xl md:text-3xl font-mono font-bold text-asset-dark">
+            Trusted by Industry Leaders
+          </h2>
           <LogoGrid 
             partners={mockPartners} 
             variant="grayscale"
             columns={4}
           />
-        </Container>
+        </div>
       </Section>
 
       {/* Team Section */}
-      <Section>
-        <Container>
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-6 text-asset-dark">
-              Our Expert Team
+      <Section variant="card" backgroundPattern="noise">
+        <div className="text-center space-y-12">
+          <div>
+            <h2 className="text-2xl md:text-3xl font-mono font-bold text-asset-dark mb-4">
+              Expert Team
             </h2>
-            <p className="text-lg text-asset-gray max-w-2xl mx-auto">
-              Meet the professionals behind AssetTrack's success
+            <p className="text-base md:text-lg text-asset-gray max-w-2xl mx-auto">
+              Meet the professionals behind AssetTrack's success in fleet management and telematics
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {mockTeamMembers.map((member) => (
               <TeamMember 
                 key={member.id} 
                 member={member}
+                className="bg-asset-white border border-asset-border"
               />
             ))}
           </div>
-        </Container>
+        </div>
       </Section>
 
-      {/* Component Testing Section */}
-      <Section className="bg-gray-50">
-        <Container>
-          <div className="text-center py-16">
-            <h2 className="text-3xl font-bold mb-6 text-asset-dark">
-              Component Integration Test
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <div className="p-6 bg-white rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold mb-4">Team Member Compact</h3>
-                <TeamMember 
-                  member={mockTeamMembers[0]}
-                  variant="compact"
-                />
-              </div>
-              <div className="p-6 bg-white rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold mb-4">Logo Grid (2 columns)</h3>
-                <LogoGrid 
-                  partners={mockPartners.slice(0, 2)} 
-                  columns={2}
-                />
-              </div>
-            </div>
-          </div>
-        </Container>
+      {/* Final CTA Section */}
+      <Section variant="card" backgroundPattern="noise">
+        <div className="text-center space-y-8">
+          <h2 className="text-2xl md:text-3xl font-mono font-bold text-asset-dark">
+            Ready to Optimize Your Fleet?
+          </h2>
+          <p className="text-base md:text-lg text-asset-gray max-w-2xl mx-auto">
+            Get expert consultation and start improving your fleet management today
+          </p>
+          <Button variant="asset-primary" className="text-base px-8 py-3">
+            Schedule Free Consultation
+          </Button>
+        </div>
       </Section>
     </div>
   );
