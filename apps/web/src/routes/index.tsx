@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { VideoBackground } from "@/components/video-background";
 import { ServiceCard } from "@/components/service-card";
 import { TeamMember } from "@/components/team-member";
-import { LogoGrid } from "@/components/logo-grid";
+import { ScrollingLogos } from "@/components/scrolling-logos";
 import { AssetTrackHeader } from "@/components/assettrack-header";
 import { cn } from "@/lib/utils";
 import { ExternalLink } from "lucide-react";
@@ -70,16 +70,18 @@ const mockTeamMembers: TeamMemberType[] = [
     id: 'siarhei-havarunou',
     name: 'Siarhei Havarunou',
     role: 'Fleet Management Expert & Conference Speaker',
-    imageUrl: '/images/siarhei-placeholder.svg',
+    imageUrl: '/images/Siarhei_Havarunou.webp',
     linkedIn: 'https://linkedin.com/in/siarhei-havarunou'
   }
 ];
 
 const mockPartners: Partner[] = [
-  { id: 'teltonika', name: 'Teltonika', logoUrl: '/images/partners/teltonika.svg', website: 'https://teltonika-gps.com' },
+  { id: 'flespi', name: 'flespi', logoUrl: '/images/partners/flespi-real.svg', website: 'https://flespi.com' },
+  { id: 'domo', name: 'DOMO', logoUrl: '/images/partners/domo-real.svg', website: 'https://domo.com' },
   { id: '1nce', name: '1NCE', logoUrl: '/images/partners/1nce.svg', website: 'https://1nce.com' },
-  { id: 'gurtam', name: 'Gurtam', logoUrl: '/images/partners/gurtam.svg', website: 'https://gurtam.com' },
-  { id: 'flespi', name: 'flespi', logoUrl: '/images/partners/flespi.svg', website: 'https://flespi.com' }
+  { id: 'gurtam', name: 'GURTAM', logoUrl: '/images/partners/gurtam.svg', website: 'https://gurtam.com' },
+  { id: 'looker', name: 'Looker', logoUrl: '/images/partners/looker.svg', website: 'https://looker.com' },
+  { id: 'teltonika', name: 'TELTONIKA', logoUrl: '/images/partners/teltonika.svg', website: 'https://teltonika-gps.com' }
 ];
 
 function HomeComponent() {
@@ -98,56 +100,58 @@ function HomeComponent() {
       <AssetTrackHeader onConsultationClick={handleConsultationClick} />
 
       {/* Hero Section - Exact Match */}
-      <Section variant="hero" backgroundPattern="noise" className="lg:flex lg:items-center lg:gap-10 pt-20">
-        <div className="lg:w-1/2">
-          {/* Badge - Exact from original */}
-          <a 
-            href="https://conference.gurtam.com/#speakers"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center rounded-full border border-asset-border bg-transparent px-2 py-1 mb-6 hover:bg-asset-border/30 transition-colors duration-200"
-          >
-            <span className="text-xs font-mono text-asset-gray">Speaker at Telematics '25</span>
-            <ExternalLink className="w-3 h-3 ml-1 text-asset-gray" />
-          </a>
-          
-          {/* Main Heading - Exact from original */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-mono font-bold leading-tight text-asset-dark mb-6">
-            Fleet Management Solutions & Telematics Expertise
-          </h1>
-          
-          {/* Subtitle - Exact from original */}
-          <p className="text-base md:text-lg text-asset-gray mb-8 leading-relaxed">
-            Helping your business grow with reliable tracking, smart data, and hands-on experience.
-          </p>
-          
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button variant="asset-primary" onClick={handleConsultationClick}>
-              Free Consultation
-            </Button>
-            <Button variant="asset-secondary" onClick={handleDemoLogin}>
-              Demo Login
-            </Button>
+      <Section variant="hero" backgroundPattern="noise" className="pt-24">
+        <div className="lg:flex lg:items-center lg:gap-12">
+          <div className="lg:w-1/2">
+            {/* Badge - Exact from original */}
+            <a 
+              href="https://conference.gurtam.com/#speakers"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center rounded-full border border-asset-border bg-transparent px-2 py-1 mb-6 hover:bg-asset-border/30 transition-colors duration-200"
+            >
+              <span className="text-xs font-mono text-asset-gray">Speaker at Telematics '25</span>
+              <ExternalLink className="w-3 h-3 ml-1 text-asset-gray" />
+            </a>
+            
+            {/* Main Heading - Exact from original */}
+            <h1 className="text-[3rem] md:text-[3rem] font-mono font-bold leading-[104%] text-asset-dark mb-4 max-w-[450px]" style={{fontWeight: 700}}>
+              Fleet Management Solutions & Telematics Expertise
+            </h1>
+            
+            {/* Subtitle - Exact from original */}
+            <p className="text-base font-mono text-asset-gray mb-4 leading-relaxed max-w-[350px]" style={{fontWeight: 500}}>
+              Helping your business grow with reliable tracking, smart data, and hands-on experience.
+            </p>
+            
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button variant="asset-primary" onClick={handleConsultationClick}>
+                Free Consultation
+              </Button>
+              <Button variant="asset-secondary" onClick={handleDemoLogin}>
+                Demo Login
+              </Button>
+            </div>
           </div>
-        </div>
-        
-        {/* Hero Video - Right Side */}
-        <div className="lg:w-1/2 mt-10 lg:mt-0">
-          <VideoBackground 
-            src="/videos/astr-hero.mp4"
-            className="rounded-3xl overflow-hidden h-80 lg:h-96"
-            showLoader={true}
-          />
+          
+          {/* Hero Video - Right Side */}
+          <div className="lg:w-1/2 mt-10 lg:mt-0">
+            <VideoBackground 
+              src="/videos/astr-hero.mp4"
+              className="rounded-3xl overflow-hidden h-80 lg:h-96"
+              showLoader={true}
+            />
+          </div>
         </div>
       </Section>
 
       {/* Services Section */}
       <Section variant="card" backgroundPattern="noise">
-        <div className="space-y-12 md:space-y-16">
+        <div className="space-y-20">
           {/* Services Title */}
           <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-mono font-bold text-asset-dark">
+            <h2 className="text-[2rem] font-mono text-asset-dark" style={{fontWeight: 400}}>
               Services
             </h2>
           </div>
@@ -158,23 +162,23 @@ function HomeComponent() {
               key={service.id} 
               id={service.id}
               className={cn(
-                "flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-12",
+                "flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-10",
                 index % 2 === 1 && "lg:flex-row-reverse"
               )}
             >
               {/* Service Content */}
-              <div className="lg:w-1/2 space-y-6">
-                <h3 className="text-2xl md:text-3xl font-mono font-bold text-asset-dark">
+              <div className="lg:w-1/2 space-y-4">
+                <h3 className="text-[1.5rem] font-mono text-asset-medium" style={{fontWeight: 400}}>
                   {service.title}
                 </h3>
-                <p className="text-base md:text-lg text-asset-gray leading-relaxed">
+                <p className="text-lg font-mono text-asset-medium leading-[150%]" style={{fontWeight: 400}}>
                   <strong>{service.description}</strong>
                 </p>
                 <ul className="space-y-3">
                   {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-3 text-asset-gray">
+                    <li key={idx} className="flex items-start gap-3 text-asset-medium">
                       <div className="w-1.5 h-1.5 bg-asset-blue rounded-full flex-shrink-0 mt-2" />
-                      <span className="text-sm leading-relaxed">{feature}</span>
+                      <span className="text-base font-mono leading-[150%]" style={{fontWeight: 400}}>{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -200,18 +204,7 @@ function HomeComponent() {
       </Section>
 
       {/* Partners Section */}
-      <Section variant="card" backgroundPattern="noise">
-        <div className="text-center space-y-8">
-          <h2 className="text-2xl md:text-3xl font-mono font-bold text-asset-dark">
-            Trusted by Industry Leaders
-          </h2>
-          <LogoGrid 
-            partners={mockPartners} 
-            variant="grayscale"
-            columns={4}
-          />
-        </div>
-      </Section>
+      <ScrollingLogos partners={mockPartners} speed="normal" />
 
       {/* Team Section */}
       <Section variant="card" backgroundPattern="noise">

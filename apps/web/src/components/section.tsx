@@ -18,7 +18,7 @@ export function Section({
   const paddingClasses = {
     none: "",
     small: "py-8 md:py-12",
-    default: "py-12 md:py-16",
+    default: "py-20 md:py-20",
     large: "py-20 md:py-24"
   };
 
@@ -30,12 +30,12 @@ export function Section({
 
   const variantClasses = {
     default: "",
-    card: "bg-asset-white rounded-3xl shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_10px_10px_-5px_rgba(0,0,0,0.1)] mx-4 md:mx-8",
-    hero: "bg-asset-white rounded-3xl shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_10px_10px_-5px_rgba(0,0,0,0.1)] mx-4 md:mx-8 mt-16 md:mt-20"
+    card: "bg-asset-white rounded-3xl shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_10px_10px_-5px_rgba(0,0,0,0.1)] mx-auto max-w-5xl mb-6",
+    hero: "bg-asset-white rounded-3xl shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_10px_10px_-5px_rgba(0,0,0,0.1)] mx-auto max-w-5xl mt-16 md:mt-20 mb-6"
   };
 
   const innerPadding = variant === "card" || variant === "hero" 
-    ? "px-8 md:px-20" 
+    ? "px-20 md:px-20" 
     : "";
 
   return (

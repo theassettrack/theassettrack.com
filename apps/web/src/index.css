@@ -26,7 +26,7 @@ body {
   @apply bg-asset-light-bg font-mono;
   background-image: url('/patterns/gggyrate.svg');
   background-repeat: repeat;
-  background-size: 100px 100px;
+  background-size: auto;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
@@ -100,6 +100,19 @@ body {
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.ticker-track {
+  animation: ticker 30s linear infinite;
 }
 
 @theme inline {
