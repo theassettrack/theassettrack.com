@@ -11,6 +11,7 @@ Professional fleet management website built with modern React 19, TypeScript, an
 - **TailwindCSS v4** with custom design tokens matching original brand
 - **Vite 6** for lightning-fast development and optimized production builds
 - **Cal.com Integration** with inline booking modals (not new tabs)
+- **Tawk.to Chat Widget** for customer support and communication
 - **Fully Responsive** design optimized for mobile, tablet, and desktop
 - **SEO Optimized** with comprehensive meta tags and structured data
 - **Performance Optimized** with <400KB total bundle size
@@ -25,7 +26,7 @@ Professional fleet management website built with modern React 19, TypeScript, an
 - **UI Components**: Custom components with shadcn/ui patterns
 - **Animation**: CSS animations for scrolling logos
 - **Icons**: Lucide React
-- **Integration**: Cal.com for booking system
+- **Integrations**: Cal.com booking system, Tawk.to chat widget
 
 ## 📦 Getting Started
 
@@ -108,7 +109,8 @@ npm run preview     # Preview production build locally
 - **Footer** with contact information
 
 ### 🔧 Technical Features
-- **Cal.com Integration**: Inline booking modals
+- **Cal.com Integration**: Inline booking modals for consultations
+- **Tawk.to Chat Widget**: Real-time customer support and communication
 - **Responsive Design**: Mobile, tablet, and desktop optimized
 - **Performance**: ~400KB total bundle size (gzipped)
 - **SEO**: Complete meta tags and structured data
@@ -124,6 +126,12 @@ Update the Cal.com integration by changing the `data-cal-link` attributes in:
 - Footer CTA
 
 Replace `assettrack/sales` with your Cal.com username/event-type.
+
+### Tawk.to Chat Setup
+The chat widget is configured with widget ID `685fddb6b431d41910941002/1iur7k50t`. To use your own chat widget:
+1. Sign up at [Tawk.to](https://www.tawk.to/)
+2. Get your widget ID from the dashboard
+3. Update the `src` URL in `src/components/tawk-chat.tsx`
 
 ### Styling
 The project uses TailwindCSS v4 with custom design tokens defined in the CSS. Key colors and spacing match the original AssetTrack brand.

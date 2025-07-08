@@ -9,6 +9,7 @@ import { TeamMember } from "@/components/team-member";
 import { ScrollingLogos } from "@/components/scrolling-logos";
 import { AssetTrackHeader } from "@/components/assettrack-header";
 import { Footer } from "@/components/footer";
+import { TawkChat } from "@/components/tawk-chat";
 import { cn } from "@/lib/utils";
 import { ExternalLink } from "lucide-react";
 import type { Service, TeamMember as TeamMemberType, Partner } from "@/types";
@@ -325,6 +326,9 @@ onClick={() => {
 
       {/* Footer */}
       <Footer />
+      
+      {/* Tawk.to Chat Widget */}
+      <TawkChat />
     </div>
   );
 }
