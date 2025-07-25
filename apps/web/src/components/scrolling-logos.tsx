@@ -15,35 +15,59 @@ export function ScrollingLogos({
   className,
   speed = "normal"
 }: ScrollingLogosProps) {
-  // Duplicate partners for seamless loop
-  const duplicatedPartners = [...partners, ...partners];
+  // Speed mapping - much faster
+  const speedMap = {
+    slow: '30s',
+    normal: '20s',
+    fast: '10s'
+  };
 
   return (
     <div 
       className={cn(
-        "overflow-hidden bg-asset-light-bg py-5",
+        "overflow-hidden bg-asset-light-bg py-5 group",
         className
       )}
       data-testid="scrolling-logos"
     >
-      <div className="flex items-center justify-between">
-        <div className="flex gap-12 ticker-track whitespace-nowrap">
-          {duplicatedPartners.map((partner, index) => (
+      <div className="relative flex">
+        {/* First set */}
+        <div 
+          className="flex gap-12 animate-scroll-logos group-hover:[animation-play-state:paused] pr-12"
+          style={{
+            animationDuration: speedMap[speed],
+          }}
+        >
+          {partners.map((partner) => (
             <div
-              key={`${partner.id}-${index}`}
-              className="flex items-center justify-center flex-shrink-0 min-w-[140px]"
+              key={`first-${partner.id}`}
+              className="flex items-center justify-center flex-shrink-0 w-[140px] h-[48px]"
             >
               <img
                 src={partner.logoUrl}
                 alt={`${partner.name} logo`}
-                className="h-12 w-auto object-contain"
-                loading="lazy"
-                style={{ maxWidth: '140px' }}
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement;
-                  console.error(`Failed to load logo: ${partner.logoUrl}`);
-                  target.style.display = 'none';
-                }}
+                className="max-h-[40px] max-w-[120px] w-auto h-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-200"
+              />
+            </div>
+          ))}
+        </div>
+        {/* Second set - duplicate for seamless loop */}
+        <div 
+          className="flex gap-12 animate-scroll-logos group-hover:[animation-play-state:paused] pr-12"
+          style={{
+            animationDuration: speedMap[speed],
+          }}
+          aria-hidden="true"
+        >
+          {partners.map((partner) => (
+            <div
+              key={`second-${partner.id}`}
+              className="flex items-center justify-center flex-shrink-0 w-[140px] h-[48px]"
+            >
+              <img
+                src={partner.logoUrl}
+                alt={`${partner.name} logo`}
+                className="max-h-[40px] max-w-[120px] w-auto h-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-200"
               />
             </div>
           ))}

@@ -102,7 +102,7 @@ body {
   --sidebar-ring: oklch(0.556 0 0);
 }
 
-@keyframes ticker {
+@keyframes scroll-logos {
   0% {
     transform: translateX(0);
   }
@@ -111,8 +111,8 @@ body {
   }
 }
 
-.ticker-track {
-  animation: ticker 30s linear infinite;
+.animate-scroll-logos {
+  animation: scroll-logos 20s linear infinite;
 }
 
 @theme inline {
