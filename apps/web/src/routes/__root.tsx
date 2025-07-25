@@ -41,7 +41,7 @@ function RootComponent() {
   return (
     <>
       <HeadContent />
-      <ThemeProvider defaultTheme="light" storageKey="assettrack-theme">
+      <ThemeProvider defaultTheme="system" storageKey="assettrack-theme">
         <div className="min-h-screen">
           {isFetching ? <Loader /> : <Outlet />}
         </div>

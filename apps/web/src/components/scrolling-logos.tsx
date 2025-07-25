@@ -25,7 +25,7 @@ export function ScrollingLogos({
   return (
     <div 
       className={cn(
-        "overflow-hidden bg-asset-light-bg py-5 group",
+        "overflow-hidden bg-asset-light-bg dark:bg-asset-light-bg-dark py-5 group",
         className
       )}
       data-testid="scrolling-logos"
@@ -46,7 +46,7 @@ export function ScrollingLogos({
               <img
                 src={partner.logoUrl}
                 alt={`${partner.name} logo`}
-                className="max-h-[40px] max-w-[120px] w-auto h-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-200"
+                className="max-h-[40px] max-w-[120px] w-auto h-auto object-contain opacity-60 hover:opacity-100 dark:invert dark:opacity-50 dark:hover:opacity-90 transition-opacity duration-200"
               />
             </div>
           ))}
@@ -67,7 +67,7 @@ export function ScrollingLogos({
               <img
                 src={partner.logoUrl}
                 alt={`${partner.name} logo`}
-                className="max-h-[40px] max-w-[120px] w-auto h-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-200"
+                className="max-h-[40px] max-w-[120px] w-auto h-auto object-contain opacity-60 hover:opacity-100 dark:invert dark:opacity-50 dark:hover:opacity-90 transition-opacity duration-200"
               />
             </div>
           ))}

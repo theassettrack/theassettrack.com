@@ -8,7 +8,7 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-mono: "JetBrains Mono", "JetBrainsMono NF", monospace;
   
-  /* AssetTrack Original Colors - Exact Match */
+  /* AssetTrack Original Colors - Light Mode */
   --color-asset-blue: #0018f1;
   --color-asset-dark: #171717;
   --color-asset-medium: #2d2d2d;
@@ -19,11 +19,23 @@
   --color-asset-secondary-btn: #F3F3F3;
   --color-asset-border: #EDEDED;
   --color-asset-input: #999999;
+  
+  /* AssetTrack Dark Mode Colors */
+  --color-asset-blue-dark: #3346ff;
+  --color-asset-dark-dark: #f5f5f5;
+  --color-asset-medium-dark: #e0e0e0;
+  --color-asset-gray-dark: #b0b0b0;
+  --color-asset-hover-dark: #ffffff;
+  --color-asset-light-bg-dark: #0a0a0a;
+  --color-asset-white-dark: #171717;
+  --color-asset-secondary-btn-dark: #262626;
+  --color-asset-border-dark: #333333;
+  --color-asset-input-dark: #666666;
 }
 
 html,
 body {
-  @apply bg-asset-light-bg font-mono;
+  @apply bg-asset-light-bg dark:bg-asset-light-bg-dark font-mono;
   background-image: url('/patterns/gggyrate.svg');
   background-repeat: repeat;
   background-size: auto;
@@ -31,6 +43,20 @@ body {
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+}
+
+/* Dark mode utilities */
+.dark {
+  --color-asset-blue: var(--color-asset-blue-dark);
+  --color-asset-dark: var(--color-asset-dark-dark);
+  --color-asset-medium: var(--color-asset-medium-dark);
+  --color-asset-gray: var(--color-asset-gray-dark);
+  --color-asset-hover: var(--color-asset-hover-dark);
+  --color-asset-light-bg: var(--color-asset-light-bg-dark);
+  --color-asset-white: var(--color-asset-white-dark);
+  --color-asset-secondary-btn: var(--color-asset-secondary-btn-dark);
+  --color-asset-border: var(--color-asset-border-dark);
+  --color-asset-input: var(--color-asset-input-dark);
 }
 
 :root {
