@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AssetTrack - Fleet Management Solutions</title>
+    <script>
+      // Single Page App routing for GitHub Pages
+      // Redirect to index.html while preserving the path
+      const path = window.location.pathname;
+      const query = window.location.search;
+      const hash = window.location.hash;
+      
+      // For GitHub Pages, we need to handle the repository name in the path
+      // since theassettrack.com is likely a custom domain, this should work directly
+      window.location.replace('/' + query + hash + '?p=' + encodeURIComponent(path));
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <p>Loading AssetTrack... <a href="/">Click here if you're not redirected</a>.</p>
+    </noscript>
+  </body>
+</html>
