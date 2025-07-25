@@ -10,7 +10,7 @@ import { Link } from "@tanstack/react-router";
 import { ArrowRight, Truck } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
-export const Route = createFileRoute("/solutions/")({
+export const Route = createFileRoute("/solutions")({
   component: SolutionsComponent,
   head: () => ({
     meta: [
