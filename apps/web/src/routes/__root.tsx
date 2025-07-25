@@ -1,7 +1,7 @@
 import Loader from "@/components/loader";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
-import { MapboxBackground } from "@/components/mapbox-background";
+import { MapboxBackground } from "@/components/mapbox-background-lazy";
 import {
   HeadContent,
   Outlet,
