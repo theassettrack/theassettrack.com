@@ -12,71 +12,12 @@ import { Footer } from "@/components/footer";
 import { TawkChat } from "@/components/tawk-chat";
 import { cn } from "@/lib/utils";
 import { ExternalLink } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import type { Service, TeamMember as TeamMemberType, Partner } from "@/types";
 
 export const Route = createFileRoute("/")({
   component: HomeComponent,
 });
-
-// Exact services content from original AssetTrack website
-const mockServices: Service[] = [
-  {
-    id: 'fleet-management',
-    title: 'Fleet Management',
-    description: 'Hardware, software, connectivity — complete setup with expert support.',
-    features: [
-      'Real-time, advanced fleet tracking',
-      'Optional video telematics', 
-      'Seamless API integration',
-      'Next-gen 4G LTE Cat 1 GPS trackers',
-      'Global multi-network connectivity',
-      'Simple pricing. No long-term contracts'
-    ],
-    videoUrl: '/videos/astr-service-fleetmanagement.mp4',
-    ctaText: 'Learn More',
-    ctaLink: '#fleet-management'
-  },
-  {
-    id: 'audits-consulting',
-    title: 'Audits & Consulting',
-    description: 'Support for GPS companies and fleet operators — whether you\'re growing your telematics business or refining your tracking system.',
-    features: [
-      'Technical consulting for GPS tracking providers',
-      'Device assessment, configuration, and rollout strategy',
-      'White-label platform evaluation and setup',
-      'Audit of existing customer installations',
-      'Data handling, report design, and value delivery',
-      'Independent, vendor-neutral guidance'
-    ],
-    videoUrl: '/videos/astr-service-consulting.mp4',
-    ctaText: 'Get Consultation',
-    ctaLink: '#audits-consulting'
-  },
-  {
-    id: 'data-visualization',
-    title: 'Data Visualization',
-    description: 'Helping deliver value beyond dots on a map.',
-    features: [
-      'Automated data exports and transformation workflows',
-      'Custom visualizations, KPI dashboards, and trend analyses',
-      'Real-time and historical fleet metrics with AI-enhanced insights',
-      'Executive-ready actionable intelligence reports'
-    ],
-    videoUrl: '/videos/astr-service-dataviz.mp4',
-    ctaText: 'View Demo',
-    ctaLink: '#data-visualization'
-  }
-];
-
-const mockTeamMembers: TeamMemberType[] = [
-  {
-    id: 'siarhei-havarunou',
-    name: 'Siarhei Havarunou',
-    role: 'Fleet Management Expert & Conference Speaker',
-    imageUrl: '/images/Siarhei_Havarunou.webp',
-    linkedIn: 'https://linkedin.com/in/siarhei-havarunou'
-  }
-];
 
 const mockPartners: Partner[] = [
   { id: 'flespi', name: 'flespi', logoUrl: '/images/partners/flespi-real.svg', website: 'https://flespi.com' },
@@ -88,6 +29,58 @@ const mockPartners: Partner[] = [
 ];
 
 function HomeComponent() {
+  const { t } = useTranslation();
+
+  // Services data with translations
+  const services: Service[] = [
+    {
+      id: 'fleet-management',
+      title: t('services.fleetManagement.title'),
+      description: t('services.fleetManagement.description'),
+      features: [
+        t('services.fleetManagement.features.tracking'),
+        t('services.fleetManagement.features.video'),
+        t('services.fleetManagement.features.api'),
+        t('services.fleetManagement.features.trackers'),
+        t('services.fleetManagement.features.connectivity'),
+        t('services.fleetManagement.features.pricing')
+      ],
+      videoUrl: '/videos/astr-service-fleetmanagement.mp4',
+      ctaText: t('services.fleetManagement.cta'),
+      ctaLink: '#fleet-management'
+    },
+    {
+      id: 'audits-consulting',
+      title: t('services.consulting.title'),
+      description: t('services.consulting.description'),
+      features: [
+        t('services.consulting.features.technical'),
+        t('services.consulting.features.device'),
+        t('services.consulting.features.whiteLabel'),
+        t('services.consulting.features.audit'),
+        t('services.consulting.features.data'),
+        t('services.consulting.features.guidance')
+      ],
+      videoUrl: '/videos/astr-service-consulting.mp4',
+      ctaText: t('services.consulting.cta'),
+      ctaLink: '#audits-consulting'
+    },
+    {
+      id: 'data-visualization',
+      title: t('services.dataVisualization.title'),
+      description: t('services.dataVisualization.description'),
+      features: [
+        t('services.dataVisualization.features.exports'),
+        t('services.dataVisualization.features.custom'),
+        t('services.dataVisualization.features.metrics'),
+        t('services.dataVisualization.features.reports')
+      ],
+      videoUrl: '/videos/astr-service-dataviz.mp4',
+      ctaText: t('services.dataVisualization.cta'),
+      ctaLink: '#data-visualization'
+    }
+  ];
+
   // Initialize Cal.com when component mounts
   React.useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -129,18 +122,18 @@ function HomeComponent() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center rounded-full border border-asset-border bg-transparent px-2 py-1 mb-6 hover:bg-asset-border/30 transition-colors duration-200 cursor-pointer"
               >
-                <span className="text-xs font-mono text-asset-gray">Speaker at Telematics '25</span>
+                <span className="text-xs font-mono text-asset-gray">{t('header.badge')}</span>
                 <ExternalLink className="w-3 h-3 ml-1 text-asset-gray" />
               </a>
               
               {/* Main Heading - Exact from original */}
               <h1 className="text-[34px] sm:text-[40px] md:text-[48px] font-mono leading-[104%] text-asset-dark mb-4 max-w-[450px]" style={{fontWeight: 400}}>
-                Fleet Management Solutions & Telematics Expertise
+                {t('hero.title')}
               </h1>
               
               {/* Subtitle - Exact from original */}
               <p className="text-[16px] font-mono text-asset-gray mb-4 leading-relaxed max-w-[350px]" style={{fontWeight: 500}}>
-                Helping your business grow with reliable tracking, smart data, and hands-on experience.
+                {t('hero.subtitle')}
               </p>
               
               {/* CTA Buttons */}
@@ -152,10 +145,10 @@ function HomeComponent() {
                   data-cal-config='{"layout":"month_view"}'
                   style={{ cursor: 'pointer' }}
                 >
-                  Free Consultation
+                  {t('hero.cta.consultation')}
                 </Button>
                 <Button variant="asset-secondary" onClick={handleDemoLogin}>
-                  Demo Login
+                  {t('hero.cta.demo')}
                 </Button>
               </div>
             </div>
@@ -177,12 +170,12 @@ function HomeComponent() {
             {/* Services Title */}
             <div className="text-center">
               <h2 className="text-[34px] sm:text-[40px] md:text-[2rem] font-mono text-asset-dark" style={{fontWeight: 400}}>
-                Services
+                {t('services.title')}
               </h2>
             </div>
 
             {/* Services Content */}
-            {mockServices.map((service, index) => (
+            {services.map((service, index) => (
               <div 
                 key={service.id} 
                 id={service.id}
@@ -209,9 +202,9 @@ function HomeComponent() {
                   </ul>
                   <Button 
                     variant="asset-primary" 
-onClick={() => {
+                    onClick={() => {
                       console.log(`Service button clicked: ${service.ctaText}`);
-                      if (service.ctaText === 'Learn More') {
+                      if (service.ctaText === t('services.fleetManagement.cta')) {
                         console.log('Scrolling to fleet-management section');
                         const element = document.getElementById('fleet-management');
                         if (element) {
@@ -219,11 +212,11 @@ onClick={() => {
                         } else {
                           console.log('fleet-management element not found');
                         }
-                      } else if (service.ctaText === 'View Demo') {
+                      } else if (service.ctaText === t('services.dataVisualization.cta')) {
                         handleDemoLogin();
                       }
                     }}
-                    {...(service.ctaText === 'Get Consultation' ? {
+                    {...(service.ctaText === t('services.consulting.cta') ? {
                       'data-cal-link': 'assettrack/sales',
                       'data-cal-namespace': 'sales',
                       'data-cal-config': '{"layout":"month_view"}'
@@ -254,7 +247,7 @@ onClick={() => {
           <div className="text-center space-y-[50px]">
             <div>
               <h2 className="text-[34px] sm:text-[40px] md:text-[2rem] font-mono text-asset-dark mb-8 sm:mb-12 md:mb-16" style={{fontWeight: 400}}>
-                About
+                {t('about.title')}
               </h2>
             </div>
             
@@ -264,16 +257,16 @@ onClick={() => {
                 <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full overflow-hidden bg-asset-blue mb-4 sm:mb-6 relative">
                   <img 
                     src="/images/Siarhei_Havarunou.webp" 
-                    alt="Siarhei Havarunou" 
+                    alt={t('about.name')} 
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="space-y-[8px]">
                   <p className="font-mono text-asset-dark" style={{fontWeight: 600}}>
-                    <strong>Siarhei Havarunou</strong>
+                    <strong>{t('about.name')}</strong>
                   </p>
                   <p className="font-mono text-asset-gray" style={{fontWeight: 400}}>
-                    Fleet Management Consultant
+                    {t('about.role')}
                   </p>
                 </div>
               </div>
@@ -281,20 +274,11 @@ onClick={() => {
               {/* Right side - Content */}
               <div className="lg:w-2/3 text-left">
                 <h3 className="text-[1.5rem] font-mono text-asset-dark mb-4 sm:mb-6" style={{fontWeight: 400}}>
-                  Helping Telematics Work
+                  {t('about.sectionTitle')}
                 </h3>
                 <div className="space-y-6 text-[16px] font-mono text-asset-gray leading-relaxed" style={{fontWeight: 400}}>
-                  <p>
-                    I've spent over 6 years helping fleets and GPS providers configure, 
-                    optimize, and scale their systems — from selecting the right hardware to 
-                    streamlining platforms, automating workflows, and turning reports into 
-                    actionable insight.
-                  </p>
-                  <p>
-                    Whether you run a rental fleet, offer GPS services, or want clearer 
-                    visibility from your tracking data, I help turn telematics into a reliable, 
-                    insight-driven part of your business.
-                  </p>
+                  <p>{t('about.bio.part1')}</p>
+                  <p>{t('about.bio.part2')}</p>
                 </div>
               </div>
             </div>
@@ -305,10 +289,10 @@ onClick={() => {
         <Section variant="default" backgroundPattern="noise" className="px-[40px] sm:px-[60px] md:px-[80px]">
           <div className="text-center space-y-[32px]">
             <h2 className="text-2xl md:text-3xl font-mono font-bold text-asset-dark">
-              Ready to Optimize Your Fleet?
+              {t('finalCta.title')}
             </h2>
             <p className="text-[16px] md:text-[18px] text-asset-gray max-w-2xl mx-auto">
-              Get expert consultation and start improving your fleet management today
+              {t('finalCta.subtitle')}
             </p>
             <Button 
               variant="asset-primary" 
@@ -318,7 +302,7 @@ onClick={() => {
               className="text-base px-8 py-3"
               style={{ cursor: 'pointer' }}
             >
-              Schedule Free Consultation
+              {t('finalCta.button')}
             </Button>
           </div>
         </Section>

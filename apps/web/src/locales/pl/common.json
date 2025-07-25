@@ -1,0 +1,137 @@
+{
+  "header": {
+    "login": "Zaloguj się",
+    "badge": "Prelegent na Telematics '25"
+  },
+  "hero": {
+    "title": "Rozwiązania Zarządzania Flotą i Ekspertyza Telematyczna",
+    "subtitle": "Pomagamy Twojej firmie rozwijać się dzięki niezawodnemu śledzeniu, inteligentnym danym i praktycznemu doświadczeniu.",
+    "cta": {
+      "consultation": "Bezpłatna Konsultacja",
+      "demo": "Logowanie Demo"
+    }
+  },
+  "services": {
+    "title": "Usługi",
+    "fleetManagement": {
+      "title": "Zarządzanie Flotą",
+      "description": "Sprzęt, oprogramowanie, łączność — kompletna konfiguracja z eksperckim wsparciem.",
+      "features": {
+        "tracking": "Zaawansowane śledzenie floty w czasie rzeczywistym",
+        "video": "Opcjonalna telematyka wideo",
+        "api": "Bezproblemowa integracja API",
+        "trackers": "Trackery GPS 4G LTE Cat 1 nowej generacji",
+        "connectivity": "Globalna łączność wielosieciowa",
+        "pricing": "Proste ceny. Bez długoterminowych umów"
+      },
+      "cta": "Dowiedz się więcej"
+    },
+    "consulting": {
+      "title": "Audyty i Konsulting",
+      "description": "Wsparcie dla firm GPS i operatorów flot — niezależnie od tego, czy rozwijasz swoją działalność telematyczną, czy udoskonalasz system śledzenia.",
+      "features": {
+        "technical": "Konsulting techniczny dla dostawców śledzenia GPS",
+        "device": "Ocena urządzeń, konfiguracja i strategia wdrożenia",
+        "whiteLabel": "Ocena i konfiguracja platformy white-label",
+        "audit": "Audyt istniejących instalacji klientów",
+        "data": "Obsługa danych, projektowanie raportów i dostarczanie wartości",
+        "guidance": "Niezależne, neutralne wobec dostawców doradztwo"
+      },
+      "cta": "Uzyskaj konsultację"
+    },
+    "dataVisualization": {
+      "title": "Wizualizacja Danych",
+      "description": "Pomagamy dostarczać wartość wykraczającą poza punkty na mapie.",
+      "features": {
+        "exports": "Zautomatyzowane eksporty danych i przepływy transformacji",
+        "custom": "Niestandardowe wizualizacje, dashboardy KPI i analizy trendów",
+        "metrics": "Metryki floty w czasie rzeczywistym i historyczne z wglądem wzmocnionym AI",
+        "reports": "Raporty z praktyczną inteligencją gotowe dla kadry zarządzającej"
+      },
+      "cta": "Zobacz Demo"
+    }
+  },
+  "about": {
+    "title": "O nas",
+    "name": "Siarhei Havarunou",
+    "role": "Konsultant Zarządzania Flotą",
+    "sectionTitle": "Sprawiamy, że Telematyka Działa",
+    "bio": {
+      "part1": "Przez ponad 6 lat pomagałem flotom i dostawcom GPS konfigurować, optymalizować i skalować ich systemy — od wyboru odpowiedniego sprzętu po usprawnianie platform, automatyzację przepływów pracy i przekształcanie raportów w praktyczne wnioski.",
+      "part2": "Niezależnie od tego, czy prowadzisz flotę wynajmu, oferujesz usługi GPS, czy chcesz uzyskać lepszy wgląd w dane śledzenia, pomagam przekształcić telematykę w niezawodną, opartą na wnioskach część Twojego biznesu."
+    }
+  },
+  "finalCta": {
+    "title": "Gotowy zoptymalizować swoją flotę?",
+    "subtitle": "Uzyskaj ekspercką konsultację i zacznij usprawniać zarządzanie flotą już dziś",
+    "button": "Umów bezpłatną konsultację"
+  },
+  "footer": {
+    "copyright": "© Asset Track sp. z.o.o – Twój Dostawca Zarządzania Flotą",
+    "ready": "Gotowy zoptymalizować swoją flotę?",
+    "privacyPolicy": "Polityka Prywatności"
+  },
+  "privacyPolicy": {
+    "title": "Polityka Prywatności",
+    "backHome": "← Powrót do strony głównej",
+    "lastUpdated": "Ostatnia aktualizacja: 26 czerwca 2025",
+    "sections": {
+      "intro": {
+        "text1": "Asset Track S.p. z.o.o (\"Asset Track\" lub \"my\", \"nasz\", \"nas\") i jej podmioty stowarzyszone są deweloperem rozwiązań śledzenia aktywów i zarządzania flotą. Asset Track zobowiązuje się do ochrony Twojej prywatności. Niniejsza Polityka Prywatności informuje, czego możesz się spodziewać w zakresie przetwarzania Twoich danych osobowych, gdy kontaktujesz się z nami lub korzystasz z jednej z naszych usług.",
+        "text2": "Niniejsza Polityka Prywatności ma zastosowanie do stron internetowych (https://theassettrack.com i jej subdomen), e-maili (contact@theassettrack.com, support@theassettrack.com, jobs@theassettrack.com, privacy@theassettrack.com), wydarzeń offline i online, produktów i usług należących do Asset Track i jej podmiotów stowarzyszonych lub przez nie kontrolowanych, w tym między innymi platformy Asset Track i powiązanych aplikacji (\"Aplikacja\") (łącznie nasze \"Usługi\"). Uzyskując dostęp do naszych Usług lub korzystając z nich, oświadczasz, że przeczytałeś, zrozumiałeś i zgadzasz się na gromadzenie, przechowywanie, wykorzystywanie i ujawnianie Twoich danych osobowych zgodnie z opisem w niniejszej Polityce Prywatności.",
+        "text3": "Poważnie traktujemy Twoją prywatność. Wszystkie dane osobowe będą przez nas gromadzone, przechowywane i wykorzystywane zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 (\"RODO\") i/lub innymi obowiązującymi przepisami, w tym polskimi przepisami o ochronie danych."
+      },
+      "dataCollection": {
+        "title": "Dane osobowe, które od Ciebie zbieramy",
+        "text": "Zbieramy Twoje dane osobowe na różne sposoby. Czasami zbieramy dane osobowe automatycznie podczas korzystania z Usług, a czasami zbieramy dane osobowe bezpośrednio od Ciebie."
+      },
+      "directData": {
+        "title": "Dane osobowe, które nam bezpośrednio przekazujesz:"
+      },
+      "automaticData": {
+        "title": "Dane osobowe, które zbieramy automatycznie:",
+        "location": "Informacje o lokalizacji:",
+        "device": "Informacje o urządzeniu:",
+        "usage": "Dane dotyczące korzystania z Usług obejmują między innymi:"
+      },
+      "purposes": {
+        "title": "W jakich celach i na jakiej podstawie przetwarzamy Twoje dane osobowe",
+        "intro": "Firma może wykorzystywać dane osobowe w następujących celach:",
+        "legalBasis": "Będziemy przetwarzać Twoje dane osobowe na podstawie jednej lub więcej z następujących podstaw prawnych, w zależności od tego, z jakich funkcji Usług korzystasz:"
+      },
+      "retention": {
+        "title": "Jak długo przechowujemy Twoje informacje?",
+        "text": "Przechowujemy Twoje informacje tylko tak długo, jak potrzebujemy ich do świadczenia Ci Usług i realizacji celów opisanych w niniejszej Polityce Prywatności. Dotyczy to również każdego, z kim dzielimy się Twoimi informacjami. Gdy nie będziemy już potrzebować Twoich informacji i nie będzie konieczności ich przechowywania w celu wypełnienia naszych zobowiązań prawnych lub regulacyjnych, usuniemy je z naszych systemów lub zdepersonalizujemy, aby nie można było Cię zidentyfikować."
+      },
+      "rights": {
+        "title": "Twoje prawa do prywatności",
+        "contact": "W przypadku pytań dotyczących ochrony Twoich danych osobowych, skontaktuj się z nami przez e-mail privacy@theassettrack.com, a my dołożymy wszelkich starań, aby rozwiązać problem."
+      },
+      "sharing": {
+        "title": "Z kim dzielimy się Twoimi danymi osobowymi?",
+        "intro": "Oprócz konkretnych sytuacji omówionych w innych częściach tej polityki, możemy udostępniać dane osobowe w następujących sytuacjach:",
+        "outro": "Z wyjątkiem przypadków określonych w niniejszej Polityce Prywatności, nie sprzedajemy, nie handlujemy, nie wynajmujemy ani w inny sposób nie udostępniamy w celach marketingowych Twoich danych osobowych stronom trzecim bez Twojej zgody."
+      },
+      "automated": {
+        "title": "Zautomatyzowane decyzje",
+        "text": "Nie stosujemy zautomatyzowanego podejmowania decyzji ani nie wykorzystujemy Twoich danych osobowych do automatycznej oceny aspektów Twojej osobowości (zautomatyzowane profilowanie)."
+      },
+      "complaint": {
+        "title": "Skarga",
+        "text": "Zgodnie z art. 77 RODO, masz prawo złożyć skargę do organu nadzorczego państwa członkowskiego UE, w którym masz stałe miejsce zamieszkania, pracujesz lub w którym miało miejsce domniemane naruszenie Twojej prywatności informacji. W Polsce możesz skontaktować się z Prezesem Urzędu Ochrony Danych Osobowych."
+      },
+      "protection": {
+        "title": "Jak chronimy Twoje informacje?",
+        "text": "Wdrażamy różnorodne techniczne, organizacyjne i prawne środki bezpieczeństwa w celu zachowania bezpieczeństwa Twoich danych osobowych podczas składania zamówienia lub wprowadzania, przesyłania lub uzyskiwania dostępu do Twoich danych osobowych. Na przykład nasi pracownicy mają różne poziomy dostępu do Twoich danych osobowych i tylko osoby odpowiedzialne za zarządzanie danymi uzyskują dostęp do Twoich danych osobowych i tylko w ograniczonych celach wymaganych do obsługi Usług. Oferujemy korzystanie z bezpiecznego serwera. Między innymi praktykami, Twoje konto jest chronione hasłem dla Twojej prywatności i bezpieczeństwa. Musisz zapobiec nieautoryzowanemu dostępowi do swojego konta i danych osobowych poprzez odpowiedni wybór i ochronę hasła oraz ograniczenie dostępu do komputera lub innego urządzenia i przeglądarki poprzez wylogowanie się po zakończeniu dostępu do konta. Nie możemy jednak zapewnić ani zagwarantować absolutnego bezpieczeństwa jakichkolwiek informacji, które przekazujesz Asset Track, ani zagwarantować, że Twoje informacje w Usługach nie mogą być dostępne, ujawnione, zmienione lub zniszczone przez naruszenie któregokolwiek z naszych fizycznych, technicznych lub zarządczych zabezpieczeń."
+      },
+      "contact": {
+        "title": "Informacje kontaktowe",
+        "intro": "Jeśli masz jakiekolwiek pytania lub wątpliwości dotyczące swojej prywatności, skontaktuj się z nami:",
+        "email": "E-mail:",
+        "company": "Firma:",
+        "website": "Strona internetowa:",
+        "dataProtection": "Możesz również skontaktować się z lokalnym organem ochrony danych. W Polsce możesz skontaktować się z Prezesem Urzędu Ochrony Danych Osobowych. Lista organów ochrony danych UE jest dostępna tutaj."
+      }
+    }
+  }
+}

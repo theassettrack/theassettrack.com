@@ -1,11 +1,14 @@
 import { cn } from "@/lib/utils";
 import { Link } from "@tanstack/react-router";
+import { useTranslation } from "react-i18next";
 
 interface FooterProps {
   className?: string;
 }
 
 export function Footer({ className }: FooterProps) {
+  const { t } = useTranslation();
+
   return (
     <footer 
       className={cn(
@@ -23,7 +26,7 @@ export function Footer({ className }: FooterProps) {
               className="h-8 w-auto opacity-80"
             />
             <p className="text-sm text-asset-gray">
-              © Asset Track sp. z.o.o – Your Fleet Management Provider
+              {t('footer.copyright')}
             </p>
           </div>
 
@@ -33,14 +36,14 @@ export function Footer({ className }: FooterProps) {
               to="/privacy-policy" 
               className="text-sm text-asset-gray hover:text-asset-blue transition-colors cursor-pointer"
             >
-              Privacy Policy
+              {t('footer.privacyPolicy')}
             </Link>
           </div>
 
           {/* Right side - Contact */}
           <div className="flex flex-col items-center md:items-end gap-2">
             <p className="text-sm text-asset-gray">
-              Ready to optimize your fleet?
+              {t('footer.ready')}
             </p>
             <a 
               href="mailto:info@theassettrack.com" 

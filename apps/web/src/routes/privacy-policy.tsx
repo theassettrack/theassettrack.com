@@ -3,6 +3,7 @@ import { AssetTrackHeader } from "@/components/assettrack-header";
 import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "@tanstack/react-router";
+import { useTranslation } from "react-i18next";
 
 export const Route = createFileRoute("/privacy-policy")({
   component: PrivacyPolicyComponent,
@@ -20,6 +21,8 @@ export const Route = createFileRoute("/privacy-policy")({
 });
 
 function PrivacyPolicyComponent() {
+  const { t } = useTranslation();
+
   return (
     <div className="min-h-screen">
       {/* AssetTrack Header */}
@@ -32,7 +35,7 @@ function PrivacyPolicyComponent() {
           <div className="mb-8">
             <Link to="/">
               <Button variant="asset-secondary" size="sm">
-                ← Back to Home
+                {t('privacyPolicy.backHome')}
               </Button>
             </Link>
           </div>
@@ -40,11 +43,11 @@ function PrivacyPolicyComponent() {
           {/* Privacy Policy Content */}
           <div className="max-w-[800px] mx-auto">
             <h1 className="text-[34px] sm:text-[40px] md:text-[48px] font-mono leading-[104%] text-asset-dark mb-8 pb-4 border-b-[3px] border-asset-blue" style={{fontWeight: 400}}>
-              Privacy Policy
+              {t('privacyPolicy.title')}
             </h1>
             
             <section className="mb-12">
-              <p className="text-[16px] font-mono text-asset-gray mb-4">Last updated on June 26, 2025</p>
+              <p className="text-[16px] font-mono text-asset-gray mb-4">{t('privacyPolicy.lastUpdated')}</p>
               <p className="text-[16px] font-mono text-asset-gray mb-4 leading-relaxed">
                 Asset Track S.p. z.o.o ("Asset Track", or "we," "our," or "us") and its affiliates is an asset tracking and fleet management solutions developer. Asset Track is committed to protecting your privacy. This Privacy Policy tells you what to expect us to do with your personal information when you contact us or use one of our services.
               </p>

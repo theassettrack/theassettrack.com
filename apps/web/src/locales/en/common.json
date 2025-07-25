@@ -1,0 +1,137 @@
+{
+  "header": {
+    "login": "Login",
+    "badge": "Speaker at Telematics '25"
+  },
+  "hero": {
+    "title": "Fleet Management Solutions & Telematics Expertise",
+    "subtitle": "Helping your business grow with reliable tracking, smart data, and hands-on experience.",
+    "cta": {
+      "consultation": "Free Consultation",
+      "demo": "Demo Login"
+    }
+  },
+  "services": {
+    "title": "Services",
+    "fleetManagement": {
+      "title": "Fleet Management",
+      "description": "Hardware, software, connectivity — complete setup with expert support.",
+      "features": {
+        "tracking": "Real-time, advanced fleet tracking",
+        "video": "Optional video telematics",
+        "api": "Seamless API integration",
+        "trackers": "Next-gen 4G LTE Cat 1 GPS trackers",
+        "connectivity": "Global multi-network connectivity",
+        "pricing": "Simple pricing. No long-term contracts"
+      },
+      "cta": "Learn More"
+    },
+    "consulting": {
+      "title": "Audits & Consulting",
+      "description": "Support for GPS companies and fleet operators — whether you're growing your telematics business or refining your tracking system.",
+      "features": {
+        "technical": "Technical consulting for GPS tracking providers",
+        "device": "Device assessment, configuration, and rollout strategy",
+        "whiteLabel": "White-label platform evaluation and setup",
+        "audit": "Audit of existing customer installations",
+        "data": "Data handling, report design, and value delivery",
+        "guidance": "Independent, vendor-neutral guidance"
+      },
+      "cta": "Get Consultation"
+    },
+    "dataVisualization": {
+      "title": "Data Visualization",
+      "description": "Helping deliver value beyond dots on a map.",
+      "features": {
+        "exports": "Automated data exports and transformation workflows",
+        "custom": "Custom visualizations, KPI dashboards, and trend analyses",
+        "metrics": "Real-time and historical fleet metrics with AI-enhanced insights",
+        "reports": "Executive-ready actionable intelligence reports"
+      },
+      "cta": "View Demo"
+    }
+  },
+  "about": {
+    "title": "About",
+    "name": "Siarhei Havarunou",
+    "role": "Fleet Management Consultant",
+    "sectionTitle": "Helping Telematics Work",
+    "bio": {
+      "part1": "I've spent over 6 years helping fleets and GPS providers configure, optimize, and scale their systems — from selecting the right hardware to streamlining platforms, automating workflows, and turning reports into actionable insight.",
+      "part2": "Whether you run a rental fleet, offer GPS services, or want clearer visibility from your tracking data, I help turn telematics into a reliable, insight-driven part of your business."
+    }
+  },
+  "finalCta": {
+    "title": "Ready to Optimize Your Fleet?",
+    "subtitle": "Get expert consultation and start improving your fleet management today",
+    "button": "Schedule Free Consultation"
+  },
+  "footer": {
+    "copyright": "© Asset Track sp. z.o.o – Your Fleet Management Provider",
+    "ready": "Ready to optimize your fleet?",
+    "privacyPolicy": "Privacy Policy"
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "backHome": "← Back to Home",
+    "lastUpdated": "Last updated on June 26, 2025",
+    "sections": {
+      "intro": {
+        "text1": "Asset Track S.p. z.o.o (\"Asset Track\", or \"we,\" \"our,\" or \"us\") and its affiliates is an asset tracking and fleet management solutions developer. Asset Track is committed to protecting your privacy. This Privacy Policy tells you what to expect us to do with your personal information when you contact us or use one of our services.",
+        "text2": "This Privacy Policy applies to websites (https://theassettrack.com and its subdomains), emails (contact@theassettrack.com, support@theassettrack.com, jobs@theassettrack.com, privacy@theassettrack.com), offline and online events, products and services owned or controlled by Asset Track and its affiliates, including but not limited to Asset Track platform and the associated apps (\"App\") (collectively, our \"Services\"). By accessing or using our Services, you signify that you have read, understood, and agree to our collection, storage, use, and disclosure of your personal information as described in this Privacy Policy.",
+        "text3": "We take your privacy seriously. All personal data will be collected, stored and used by us in accordance with the European Union General Data Protection Regulation No. 2016/679 (\"GDPR\") and/or other applicable statutory regulations including Polish data protection laws."
+      },
+      "dataCollection": {
+        "title": "Personal Data that we collect from you",
+        "text": "We collect Personal Data about you in a variety of ways. Sometimes we collect Personal Data automatically when you interact with the Services, and sometimes we collect the Personal Data directly from you."
+      },
+      "directData": {
+        "title": "Personal Data that you provide to us directly:"
+      },
+      "automaticData": {
+        "title": "Personal Data that we collect automatically:",
+        "location": "Location Information:",
+        "device": "Device Information:",
+        "usage": "Data about your use of the Services includes, among others:"
+      },
+      "purposes": {
+        "title": "For what purposes, on what grounds we process your Personal Data",
+        "intro": "The Company may use Personal Data for the following purposes:",
+        "legalBasis": "We will process your Personal Data based on one or more of the following legal bases depending on which features of the Services you use:"
+      },
+      "retention": {
+        "title": "How long do we keep your information?",
+        "text": "We keep your information only as long as we need it to provide Services to you and fulfill the purposes described in this Privacy Policy. This is also the case for anyone that we share your information with. When we no longer need your information and there is no need for us to keep it to comply with our legal or regulatory obligations, we'll either remove it from our systems or depersonalize it so that we can't identify you."
+      },
+      "rights": {
+        "title": "Your privacy rights",
+        "contact": "In case some questions about your Personal Data protection remain, contact us via email privacy@theassettrack.com, and we will do our best to solve the problem for you."
+      },
+      "sharing": {
+        "title": "With whom do we share your personal information?",
+        "intro": "In addition to the specific situations discussed elsewhere in this policy, we may share personal information in the following situations:",
+        "outro": "Except as otherwise stated in this Privacy Policy, we do not sell, trade, rent or otherwise share for marketing purposes your personal information with third-parties without your consent."
+      },
+      "automated": {
+        "title": "Automated decisions",
+        "text": "We neither use automated decision-making nor your Personal Data to automatically assess aspects of your personality (automated profiling)."
+      },
+      "complaint": {
+        "title": "Complaint",
+        "text": "Pursuant to Art.77 GDPR, you have the right to file a complaint with a supervisory authority of the EU Member State where you permanently reside, work or where there was an alleged violation of your information privacy. In Poland, you can contact the President of the Personal Data Protection Office (Prezes Urzędu Ochrony Danych Osobowych)."
+      },
+      "protection": {
+        "title": "How do we protect your information?",
+        "text": "We implement a variety of technical, organizational and legal security measures to maintain the safety of your personal information when you place an order or enter, submit, or access your Personal Data. For example, our employees have different levels of access to your Personal Data and only those in charge of data management get access to your Personal Data and only for limited purposes required for the operation of the Services. We offer the use of a secure server. Among other practices, your account is protected by a password for your privacy and security. You must prevent unauthorized access to your account and personal information by selecting and protecting your password appropriately and limiting access to your computer or other device and browser by signing off after you finished accessing your account. We cannot, however, ensure or guarantee the absolute security of any information you provide to Asset Track or guarantee that your information on the Services may not be accessed, disclosed, altered, or destroyed by a breach of any of our physical, technical, or managerial safeguards."
+      },
+      "contact": {
+        "title": "Contact information",
+        "intro": "If you have any questions or concerns about your privacy, contact us at:",
+        "email": "Email:",
+        "company": "Company:",
+        "website": "Website:",
+        "dataProtection": "You may also contact your local data protection authority. In Poland, you can contact the President of the Personal Data Protection Office (Prezes Urzędu Ochrony Danych Osobowych). A list of EU data protection authorities is available here."
+      }
+    }
+  }
+}

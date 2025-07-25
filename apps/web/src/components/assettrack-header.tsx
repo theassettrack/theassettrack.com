@@ -4,12 +4,15 @@
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
+import { LanguageSwitcher } from "@/components/language-switcher";
+import { useTranslation } from "react-i18next";
 
 interface AssetTrackHeaderProps {
   className?: string;
 }
 
 export function AssetTrackHeader({ className }: AssetTrackHeaderProps) {
+  const { t, i18n } = useTranslation();
 
   return (
     <header 
@@ -35,16 +38,19 @@ export function AssetTrackHeader({ className }: AssetTrackHeaderProps) {
             </div>
           </div>
 
-          {/* Right side - Login + Consultation */}
+          {/* Right side - Language Switcher + Login + Consultation */}
           <div className="flex items-center gap-2">
+            {/* Language Switcher */}
+            <LanguageSwitcher />
+
             {/* Log in Link - Exact from original */}
             <a
-              href="https://fleet.theassettrack.com/?lang=en"
+              href={`https://fleet.theassettrack.com/?lang=${i18n.language}`}
               target="_blank"
               rel="noopener noreferrer"
               className="font-mono text-[16px] leading-[1.4] px-3 py-2.5 text-asset-dark hover:text-asset-gray transition-colors duration-200 cursor-pointer hidden sm:block"
             >
-              Log in
+              {t("header.login")}
             </a>
 
             {/* Free Consultation Button */}
@@ -56,8 +62,8 @@ export function AssetTrackHeader({ className }: AssetTrackHeaderProps) {
               className="text-xs sm:text-sm px-3 sm:px-4 py-1.5 sm:py-2"
               style={{ cursor: 'pointer' }}
             >
-              <span className="hidden sm:inline">Free Consultation</span>
-              <span className="sm:hidden">Consultation</span>
+              <span className="hidden sm:inline">{t("hero.cta.consultation")}</span>
+              <span className="sm:hidden">{t("hero.cta.consultation").split(' ')[0]}</span>
             </Button>
           </div>
         </div>
