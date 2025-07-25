@@ -18,6 +18,16 @@ declare module "@tanstack/react-router" {
   }
 }
 
+// Handle 404 redirects for GitHub Pages
+if (window.location.search) {
+  const params = new URLSearchParams(window.location.search);
+  const redirect = params.get('p');
+  if (redirect) {
+    // Remove the query parameter and navigate to the intended path
+    window.history.replaceState(null, '', redirect);
+  }
+}
+
 const rootElement = document.getElementById("app");
 
 if (!rootElement) {
