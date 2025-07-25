@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { Link } from "@tanstack/react-router";
 
 interface FooterProps {
   className?: string;
@@ -26,7 +27,17 @@ export function Footer({ className }: FooterProps) {
             </p>
           </div>
 
-          {/* Right side - Newsletter (Optional) */}
+          {/* Center - Legal Links */}
+          <div className="flex items-center gap-4">
+            <Link 
+              to="/privacy-policy" 
+              className="text-sm text-asset-gray hover:text-asset-blue transition-colors cursor-pointer"
+            >
+              Privacy Policy
+            </Link>
+          </div>
+
+          {/* Right side - Contact */}
           <div className="flex flex-col items-center md:items-end gap-2">
             <p className="text-sm text-asset-gray">
               Ready to optimize your fleet?
