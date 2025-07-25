@@ -66,6 +66,98 @@
     "subtitle": "Uzyskaj ekspercką konsultację i zacznij usprawniać zarządzanie flotą już dziś",
     "button": "Umów bezpłatną konsultację"
   },
+  "solutions": {
+    "title": "Rozwiązania Zarządzania Flotą",
+    "subtitle": "Potężne aplikacje i integracje zaprojektowane w celu usprawnienia operacji flotowych. Zbudowane na wiodących platformach branżowych, dostosowane do rzeczywistego użytku.",
+    "driverTripbook": {
+      "title": "Driver Tripbook",
+      "subtitle": "Nowoczesne zarządzanie podróżami floty dla Wialon",
+      "description": "Nowoczesne zarządzanie podróżami floty z płynną integracją Wialon. Zmień sposób zarządzania podróżami pojazdów poprzez intuicyjny interfejs.",
+      "longDescription": "Zmień sposób zarządzania podróżami pojazdów dzięki płynnej integracji z Wialon. Driver Tripbook wprowadza przejrzystość do danych Twojej floty poprzez intuicyjny interfejs, który umieszcza niezbędne informacje na wyciągnięcie ręki.",
+      "features": {
+        "realtime": "Dane podróży w czasie rzeczywistym z Wialon",
+        "classification": "Klasyfikacja podróży służbowych/prywatnych",
+        "bulk": "Narzędzia do masowego przypisywania kierowców",
+        "export": "Raporty Excel i CSV"
+      },
+      "capabilities": {
+        "title": "Kluczowe możliwości",
+        "subtitle": "Wszystko, czego potrzebujesz do efektywnego zarządzania podróżami floty",
+        "realTimeData": {
+          "title": "Dostęp do danych w czasie rzeczywistym",
+          "description": "Uzyskaj dostęp do danych podróży w czasie rzeczywistym bezpośrednio z konta Wialon"
+        },
+        "smartClassification": {
+          "title": "Inteligentna klasyfikacja",
+          "description": "Klasyfikuj podróże jako służbowe lub prywatne dla dokładnych zapisów podatkowych"
+        },
+        "bulkManagement": {
+          "title": "Zarządzanie masowe",
+          "description": "Przypisuj kierowców i dodawaj szczegółowe notatki za pomocą wydajnych narzędzi masowych"
+        },
+        "exportReports": {
+          "title": "Eksportuj raporty",
+          "description": "Generuj dopracowane raporty Excel i CSV dostosowane do Twoich potrzeb"
+        },
+        "secureIntegration": {
+          "title": "Bezpieczna integracja",
+          "description": "Twoje dane pozostają bezpieczne w Wialon - nie przechowujemy niczego lokalnie"
+        },
+        "worksEverywhere": {
+          "title": "Działa wszędzie",
+          "description": "Zarządzaj wszystkim z komputera lub urządzenia mobilnego — aplikacja nie jest wymagana"
+        }
+      },
+      "realWorld": {
+        "title": "Stworzony do rzeczywistego zarządzania flotą",
+        "description": "Niezależnie od tego, czy nadzujesz 5 czy 500 pojazdów, Driver Tripbook dostosowuje się do Twojego przepływu pracy. Platforma łączy się bezpośrednio z API Wialon, wyświetlając Twoje dane w czystym, zorganizowanym formacie bez przechowywania czegokolwiek lokalnie. Twoje informacje pozostają bezpieczne w Wialon, podczas gdy zyskujesz potężne możliwości zarządzania.",
+        "evolving": {
+          "title": "Ciągle ewoluuje",
+          "description": "Twoja opinia kształtuje nasz rozwój. Gdy zmieniają się potrzeby zarządzania flotą, Driver Tripbook dostosowuje się. Regularnie wydajemy funkcje zgłaszane przez naszą społeczność użytkowników, zapewniając, że zawsze masz narzędzia, które mają największe znaczenie."
+        },
+        "getStarted": {
+          "title": "Rozpocznij w kilka sekund",
+          "description": "Bez instalacji. Bez skomplikowanej konfiguracji. Po prostu zaloguj się danymi Wialon i doświadcz zarządzania flotą zaprojektowanego dla Twojego rzeczywistego sposobu pracy."
+        }
+      },
+      "whoBenefits": {
+        "title": "Kto korzysta",
+        "subtitle": "Driver Tripbook został zaprojektowany dla profesjonalistów, którzy potrzebują efektywnego zarządzania flotą",
+        "fleetManagers": {
+          "title": "Menedżerowie floty",
+          "description": "Poszukujący usprawnionej obsługi i jasnego wglądu w działania floty"
+        },
+        "businessOwners": {
+          "title": "Właściciele firm",
+          "description": "Wymagający dokładnych dzienników podróży do celów zgodności i zarządzania kosztami"
+        },
+        "financeTeams": {
+          "title": "Zespoły finansowe",
+          "description": "Potrzebujący niezawodnych danych zgodności do celów podatkowych i sprawozdawczych"
+        },
+        "operationsTeams": {
+          "title": "Zespoły operacyjne",
+          "description": "Każdy, kto ceni swój czas i chce zarządzania flotą, które po prostu działa"
+        }
+      },
+      "status": "Dostępny",
+      "cta": {
+        "learnMore": "Dowiedz się więcej",
+        "tryIt": "Wypróbuj Driver Tripbook",
+        "scheduleDemo": "Umów Demo",
+        "needAssistance": "Potrzebujesz pomocy?",
+        "bookSession": "Umów sesję",
+        "chatWithUs": "Porozmawiaj z nami",
+        "visitWebsite": "Lub odwiedź",
+        "toStart": "aby rozpocząć korzystanie z Driver Tripbook już dziś"
+      }
+    },
+    "moreComing": {
+      "title": "Więcej rozwiązań wkrótce",
+      "description": "Ciągle rozwijamy nowe narzędzia i integracje, aby pomóc Ci skuteczniej zarządzać flotą. Masz konkretną potrzebę? Porozmawiajmy o tym, jak możemy pomóc.",
+      "cta": "Umów konsultację"
+    }
+  },
   "footer": {
     "copyright": "© Asset Track sp. z.o.o – Twój Dostawca Zarządzania Flotą",
     "ready": "Gotowy zoptymalizować swoją flotę?",

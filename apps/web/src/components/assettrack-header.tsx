@@ -7,6 +7,7 @@ import { ExternalLink } from "lucide-react";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { ModeToggle } from "@/components/mode-toggle";
 import { useTranslation } from "react-i18next";
+import { Link } from "@tanstack/react-router";
 
 interface AssetTrackHeaderProps {
   className?: string;
@@ -29,15 +30,23 @@ export function AssetTrackHeader({ className }: AssetTrackHeaderProps) {
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-9">
         <div className="flex items-center justify-between py-3 md:py-4">
           {/* Left side - Logo */}
-          <div className="flex items-center">
+          <div className="flex items-center gap-6">
             {/* Logo */}
-            <div className="flex items-center">
+            <Link to="/" className="flex items-center">
               <img 
                 src="/images/Logo_Astr_long_black.webp" 
                 alt="AssetTrack" 
                 className="h-6 sm:h-7 md:h-8 w-auto dark:invert dark:brightness-95"
               />
-            </div>
+            </Link>
+            
+            {/* Solutions Link */}
+            <Link
+              to="/solutions"
+              className="font-mono text-[16px] leading-[1.4] px-3 py-2.5 text-asset-dark dark:text-asset-dark-dark hover:text-asset-gray dark:hover:text-asset-gray-dark transition-colors duration-200 cursor-pointer hidden md:block"
+            >
+              Solutions
+            </Link>
           </div>
 
           {/* Right side - Theme Toggle + Language Switcher + Login + Consultation */}

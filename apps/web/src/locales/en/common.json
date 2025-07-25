@@ -66,6 +66,98 @@
     "subtitle": "Get expert consultation and start improving your fleet management today",
     "button": "Schedule Free Consultation"
   },
+  "solutions": {
+    "title": "Fleet Management Solutions",
+    "subtitle": "Powerful applications and integrations designed to streamline your fleet operations. Built on industry-leading platforms, tailored for real-world use.",
+    "driverTripbook": {
+      "title": "Driver Tripbook",
+      "subtitle": "Modern Fleet Trip Management for Wialon",
+      "description": "Modern fleet trip management with seamless Wialon integration. Transform how you manage vehicle trips through an intuitive interface.",
+      "longDescription": "Transform how you manage vehicle trips with seamless Wialon integration. Driver Tripbook brings clarity to your fleet data through an intuitive interface that puts essential information at your fingertips.",
+      "features": {
+        "realtime": "Real-time trip data from Wialon",
+        "classification": "Business/personal trip classification",
+        "bulk": "Bulk driver assignment tools",
+        "export": "Excel and CSV reporting"
+      },
+      "capabilities": {
+        "title": "Key Capabilities",
+        "subtitle": "Everything you need to manage your fleet trips efficiently",
+        "realTimeData": {
+          "title": "Real-Time Data Access",
+          "description": "Access real-time trip data directly from your Wialon account"
+        },
+        "smartClassification": {
+          "title": "Smart Classification",
+          "description": "Classify trips as business or personal for accurate tax records"
+        },
+        "bulkManagement": {
+          "title": "Bulk Management",
+          "description": "Assign drivers and add detailed notes with efficient bulk tools"
+        },
+        "exportReports": {
+          "title": "Export Reports",
+          "description": "Generate polished Excel and CSV reports tailored to your needs"
+        },
+        "secureIntegration": {
+          "title": "Secure Integration",
+          "description": "Your data stays secure within Wialon - we don't store anything locally"
+        },
+        "worksEverywhere": {
+          "title": "Works Everywhere",
+          "description": "Manage everything from desktop or mobile—no app required"
+        }
+      },
+      "realWorld": {
+        "title": "Built for Real-World Fleet Management",
+        "description": "Whether you oversee 5 vehicles or 500, Driver Tripbook adapts to your workflow. The platform connects directly to Wialon's API, displaying your data in a clean, organized format without storing anything locally. Your information stays secure within Wialon while you gain powerful management capabilities.",
+        "evolving": {
+          "title": "Always Evolving",
+          "description": "Your feedback shapes our development. As fleet management needs change, Driver Tripbook adapts. We regularly release features requested by our user community, ensuring you always have the tools that matter most."
+        },
+        "getStarted": {
+          "title": "Get Started in Seconds",
+          "description": "No installations. No complicated setup. Just log in with your Wialon credentials and experience fleet management designed for how you actually work."
+        }
+      },
+      "whoBenefits": {
+        "title": "Who Benefits",
+        "subtitle": "Driver Tripbook is designed for professionals who need efficient fleet management",
+        "fleetManagers": {
+          "title": "Fleet Managers",
+          "description": "Seeking streamlined operations and clear visibility into fleet activities"
+        },
+        "businessOwners": {
+          "title": "Business Owners",
+          "description": "Requiring accurate trip logs for compliance and cost management"
+        },
+        "financeTeams": {
+          "title": "Finance Teams",
+          "description": "Needing reliable compliance data for tax and reporting purposes"
+        },
+        "operationsTeams": {
+          "title": "Operations Teams",
+          "description": "Anyone who values their time and wants fleet management that just works"
+        }
+      },
+      "status": "Available",
+      "cta": {
+        "learnMore": "Learn More",
+        "tryIt": "Try Driver Tripbook",
+        "scheduleDemo": "Schedule Demo",
+        "needAssistance": "Need Assistance?",
+        "bookSession": "Book a Session",
+        "chatWithUs": "Chat with Us",
+        "visitWebsite": "Or visit",
+        "toStart": "to start using Driver Tripbook today"
+      }
+    },
+    "moreComing": {
+      "title": "More Solutions Coming Soon",
+      "description": "We're continuously developing new tools and integrations to help you manage your fleet more effectively. Have a specific need? Let's discuss how we can help.",
+      "cta": "Schedule a Consultation"
+    }
+  },
   "footer": {
     "copyright": "© Asset Track sp. z.o.o – Your Fleet Management Provider",
     "ready": "Ready to optimize your fleet?",

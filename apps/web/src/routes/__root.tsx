@@ -1,6 +1,7 @@
 import Loader from "@/components/loader";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
+import { MapboxBackground } from "@/components/mapbox-background";
 import {
   HeadContent,
   Outlet,
@@ -42,8 +43,14 @@ function RootComponent() {
     <>
       <HeadContent />
       <ThemeProvider defaultTheme="system" storageKey="assettrack-theme">
-        <div className="min-h-screen">
-          {isFetching ? <Loader /> : <Outlet />}
+        <div className="relative">
+          {/* Global Mapbox Background */}
+          <MapboxBackground className="z-0" />
+          
+          {/* Main content */}
+          <div className="relative z-10 min-h-screen">
+            {isFetching ? <Loader /> : <Outlet />}
+          </div>
         </div>
         <Toaster richColors />
       </ThemeProvider>

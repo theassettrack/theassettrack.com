@@ -24,12 +24,11 @@ function PrivacyPolicyComponent() {
   const { t } = useTranslation();
 
   return (
-    <div className="min-h-screen">
-      {/* AssetTrack Header */}
+    <>
       <AssetTrackHeader />
-
-      {/* Single White Card Container - Matching website style */}
-      <div className="bg-asset-white rounded-3xl shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_10px_10px_-5px_rgba(0,0,0,0.1)] mx-4 sm:mx-6 md:mx-auto max-w-[1200px] mt-[60px] md:mt-[90px] mb-6 bg-[url('/patterns/nnnoise.svg')] bg-repeat">
+      <main>
+        {/* Single White Card Container - Matching website style */}
+        <div className="bg-asset-white dark:bg-asset-white-dark rounded-3xl shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_10px_10px_-5px_rgba(0,0,0,0.1)] dark:shadow-[0_20px_25px_-5px_rgba(255,255,255,0.05),0_10px_10px_-5px_rgba(255,255,255,0.05)] mx-4 sm:mx-6 md:mx-auto max-w-[1200px] mt-[60px] md:mt-[90px] mb-6 bg-[url('/patterns/nnnoise.svg')] bg-repeat">
         <div className="px-[40px] sm:px-[60px] md:px-[80px] py-20">
           {/* Back to Home */}
           <div className="mb-8">
@@ -296,10 +295,10 @@ function PrivacyPolicyComponent() {
             </section>
           </div>
         </div>
-      </div>
-
-      {/* Footer */}
+        </div>
+      </main>
+      
       <Footer />
-    </div>
+    </>
   );
 }

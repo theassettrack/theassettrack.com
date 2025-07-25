@@ -106,11 +106,11 @@ function HomeComponent() {
 
   return (
     <div className="min-h-screen">
-      {/* AssetTrack Header */}
       <AssetTrackHeader />
-
-      {/* Single White Card Container for Entire Site - Exact 1200px from original */}
-      <div className="bg-asset-white dark:bg-asset-white-dark rounded-3xl shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_10px_10px_-5px_rgba(0,0,0,0.1)] dark:shadow-[0_20px_25px_-5px_rgba(255,255,255,0.05),0_10px_10px_-5px_rgba(255,255,255,0.05)] mx-4 sm:mx-6 md:mx-auto max-w-[1200px] mt-[60px] md:mt-[90px] mb-6 bg-[url('/patterns/nnnoise.svg')] bg-repeat">
+      
+      <main>
+        {/* Single White Card Container for Entire Site - Exact 1200px from original */}
+        <div className="bg-asset-white dark:bg-asset-white-dark rounded-3xl shadow-[0_20px_25px_-5px_rgba(0,0,0,0.1),0_10px_10px_-5px_rgba(0,0,0,0.1)] dark:shadow-[0_20px_25px_-5px_rgba(255,255,255,0.05),0_10px_10px_-5px_rgba(255,255,255,0.05)] mx-4 sm:mx-6 md:mx-auto max-w-[1200px] mt-[60px] md:mt-[90px] mb-6 bg-[url('/patterns/nnnoise.svg')] bg-repeat">
         {/* Hero Section - Exact Match */}
         <Section variant="default" backgroundPattern="noise" className="pt-20 md:pt-24 px-[40px] sm:px-[60px] md:px-[80px]">
           <div className="lg:flex lg:items-center lg:gap-12">
@@ -306,8 +306,9 @@ function HomeComponent() {
             </Button>
           </div>
         </Section>
-      </div>
-
+        </div>
+      </main>
+      
       {/* Footer */}
       <Footer />
       
